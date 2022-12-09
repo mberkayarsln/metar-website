@@ -86,7 +86,7 @@ section{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: url(/images/toplu1-lessopacity.png) center center no-repeat;
+    background: url(/images/photo3-lessopacity.png) center center no-repeat;
     background-size: cover;  
     background-attachment: fixed;
 }
@@ -153,56 +153,78 @@ section{
     transform: scale(1.5);
 }
 
+
 .activities{
-    background:#2B7A78;
+    background-color: #2B7A78;
     margin-top: 50px;
-    
 }
 
-.activities .content-activities{
-    z-index: 888;
-    color:#fff;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly
-}
-
-
-.activities h1{
+.activities .entrance h1{
     margin-bottom: 25px;
     text-align: center;
     font-size: 2.5em;
     color: #fff;
 }
-.activities h1 span{
+
+.activities .entrance h1 span{
     font-size: 1rem;
 }
 
-.activities .content-activities img{
-    transition: 0.5s ease;
-    border-radius: 8px;   
+
+.activities .content-activities{
+    display: flex;
+    flex-direction: column;
 }
 
-
-.activities .content-activities img:hover{
+.activities .content-activities .activity img{
+    border-radius: 8px;
+    width: 30%;
+    transition: 0.5s ease;
+}
+.activities .content-activities .activity img:hover{
     transform: scale(1.1);
     transition: 0.5s ease;
 }
 
-.activities .content-activities :nth-child(n){
+.activities .content-activities .activity:nth-child(odd){
+    display: flex;
+    justify-content: space-between;
+    background-color: #a2c7c9;
+    border-radius: 10px;
+}
+
+.activities .content-activities .activity:nth-child(odd) .description{
+    margin: 0 2rem;
     display: flex;
     flex-direction: column;
-}
-.activities .content-activities .activity-2{
-    margin: 0 2rem;
-}
-    
-
-.activities .content-activities span{
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: 16px;
-    font-weight: 600;
+    color:#feffff;
+    width: 60%;
 }
+
+.activities .content-activities .activity:nth-child(even){
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 2rem 0;
+    background-color: #5d8282;
+    border-radius: 10px;
+}
+
+.activities .content-activities .activity:nth-child(even) .description{
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:#feffff;
+    width: 60%;
+}
+
+
 
 
 .board{
@@ -226,7 +248,7 @@ section{
 }
 
 .board h4{
-    border-bottom: 2px solid #86d7d7;
+    border-bottom: 2px solid #e3e8e8;
 }
 
 .board .board-cards{
@@ -244,7 +266,7 @@ section{
     height: 320px;
     padding: 0.5rem;
     border-radius: 10px;
-    background-color: #DEE2C1;
+    background-color: #a2c7c9;
     margin: 1rem 2.5rem;
     transition: 0.5s ease;
 }
@@ -275,7 +297,7 @@ section{
 
 .contact {
     margin-top: 50px;
-    background: url("/images/image_6483441.JPG") center center no-repeat;
+    background: url("/images/photo1.jpg") center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -565,28 +587,7 @@ section{
 
 @media(max-width:980px){
 
-    .activities{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .activities .content-activities .activity-2{
-        margin: 0;
-    }
-    .activities .content-activities span{
-        margin: 10px 0;
-    }
     
-    .activities .content-activities{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-    }
-
-    .activities .content-activities div img {
-        width: 90%;
-        margin: auto;
-    }
 
     .board{
         overflow: hidden;
@@ -618,3 +619,23 @@ section{
     }
 }
 
+@media (max-width:655px){
+    .activities .content-activities .activity:nth-child(odd){
+        flex-direction: column;
+        align-items: center;
+    }
+    .activities .content-activities .activity:nth-child(even){
+        flex-direction: column;
+        align-items: center;
+    }
+    .activities .content-activities .activity img{
+        width:60%;
+        margin: 0.5rem 0;
+    }
+    .activities .content-activities .activity:nth-child(odd) .description{
+        margin: 0.5rem 0;
+    }
+    .activities .content-activities .activity:nth-child(even) .description{
+        margin: 0.5rem 0;
+    }
+}
