@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" type="image" href="/images/logo.png">
-    <script src="mail.js"></script>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
@@ -194,8 +193,8 @@
           <input type="text" class="field" id="fullName" placeholder="Adınız">
           <input type="email" class="field" id="e-mail" placeholder="E-Postanız">
           <input type="text" class="field" id="number" placeholder="Telefon Numaranız">
-          <textarea class="field" id="message_id" placeholder="Mesajınız" rows="8" style="resize: none;"></textarea>
-          <button type="submit" class="field-button" id="button" onclick="SendMail()">Mesajı Gönder</button>
+          <textarea class="field" id="message-id" placeholder="Mesajınız" rows="8" style="resize: none;"></textarea>
+          <button type="submit" class="field-button" id="button">Mesajı Gönder</button>
         </div>
           
       </div>
@@ -244,6 +243,8 @@
         once:true,
       });
     </script>
+
+  <script src="mail.js"></script>
 
    
 </body>
