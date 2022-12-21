@@ -155,7 +155,7 @@ section{
 
 
 .activities{
-    background-color: #2B7A78;
+    background-image: linear-gradient(to right,#17252A,#2b7a78);
     margin-top: 50px;
 }
 
@@ -189,7 +189,7 @@ section{
 .activities .content-activities .activity:nth-child(odd){
     display: flex;
     justify-content: space-between;
-    background-color: #a2c7c9;
+    background-color: #83a3a4;
     border-radius: 10px;
 }
 
@@ -228,7 +228,7 @@ section{
 
 
 .board{
-    background-color: #2B7A78;
+    background-image: linear-gradient(to left,#17252A,#2b7A78);
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -266,7 +266,7 @@ section{
     height: 320px;
     padding: 0.5rem;
     border-radius: 10px;
-    background-color: #a2c7c9;
+    background-color: #83a3a4;
     margin: 1rem 2.5rem;
     transition: 0.5s ease;
 }
