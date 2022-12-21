@@ -37,12 +37,19 @@ header .community{
     text-transform: uppercase;
     text-decoration: none;
     transition: 0.5s ease;
+    display: flex;
+    align-items: center;
 }
 
 header .community:hover{
     color:#FFF;
     transform: scale(1.2);
     transition: 0.5s ease;
+}
+
+header .community #title-logo{
+    width: 1.7em;
+    margin-right: 0.5rem;
 }
 
 header .navigation{
