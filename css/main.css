@@ -88,7 +88,7 @@ section{
 
 .home{
     position: relative;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -192,6 +192,37 @@ section{
     transform: scale(1.1);
     transition: 0.5s ease;
 }
+
+.pop-up-image{
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0,0,0,.9);
+    height: 100%; width: 100%;
+    z-index: 999;
+    display: none;
+}
+
+
+.pop-up-image span{
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color : #fff;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.pop-up-image img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 70%;
+    object-fit: cover;
+}
+
 
 .activities .content-activities .activity:nth-child(odd){
     display: flex;
