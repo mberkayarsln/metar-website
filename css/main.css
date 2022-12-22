@@ -219,7 +219,7 @@ section{
     transform: translate(-50%,-50%);
     border: 5px solid #fff;
     border-radius: 5px;
-    width: 70%;
+    width: 50%;
     object-fit: cover;
 }
 
