@@ -135,7 +135,9 @@
         width: 100%;
     }
     .pop-up-image img{
-        width: 100%;
+        width: 80%; height: 80%;
+        object-fit: scale-down;
+        border: none;
     }
 }
 
