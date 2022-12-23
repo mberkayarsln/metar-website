@@ -93,9 +93,8 @@ section{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: url(/images/photo3-lessopacity.png) center center no-repeat;
+    background: url("/images/photo3-lessopacity.png") center center no-repeat;
     background-size: cover;  
-    background-attachment: fixed;
 }
 
 
@@ -183,9 +182,31 @@ section{
     flex-direction: column;
 }
 
+.activities .content-activities .activity:nth-child(4){
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.activities .content-activities .activity:nth-child(4) img{
+    width: 40%;
+}
+
+.activities .content-activities .activity #ankara{
+    display: flex;
+    
+}
+
+.activities .content-activities .activity #edirne{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+
 .activities .content-activities .activity img{
     border-radius: 8px;
-    width: 30%;
+    width: 40%;
     transition: 0.5s ease;
 }
 .activities .content-activities .activity img:hover{
@@ -219,7 +240,7 @@ section{
     transform: translate(-50%,-50%);
     border: 5px solid #fff;
     border-radius: 5px;
-    width: 50%;
+    height: 90%;
     object-fit: cover;
 }
 
@@ -337,7 +358,6 @@ section{
     margin-top: 50px;
     background: url("/images/photo1.jpg") center center no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .contact h1{
@@ -389,8 +409,8 @@ section{
 .contact .contact-box .up .field:focus{
     background-color: #AAFFD9;
     transition: 0.5s ease;
-    transform: scale(1.05);
-    border : 3px solid rgb(175, 180, 180);
+/*     transform: scale(1.05);
+ */    border : 3px solid rgb(175, 180, 180);
 }
 
 .contact .contact-box .up button{
